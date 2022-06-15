@@ -1,0 +1,27 @@
+.login {
+    &__wrapper {
+        background-color: #fff;
+        padding: 20px 40px;
+        border-radius: 20px;
+        width: 30%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    &-input {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid #6400b6;
+        &:focus {
+            outline: none;
+        }
+    }
+    &-btn {
+        background: linear-gradient(45deg, #0059ff, #4600b6, #6400b6);
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        color: #fff;
+    }
+}

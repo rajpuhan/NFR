@@ -1,0 +1,14 @@
+.header {
+    background: linear-gradient(45deg, #0059ff, #4600b6, #6400b6);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    &__title {
+        color: #fff;
+        display: flex;
+    }
+}
+
+.white-icon {
+    color: #fff;
+}

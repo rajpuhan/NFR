@@ -1,0 +1,25 @@
+.side-nav {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    &__title {
+        padding-left: 20px;
+    }
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        &-item {
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            &:hover {
+                background-color: #ececec;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
