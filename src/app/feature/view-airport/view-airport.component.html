@@ -1,0 +1,24 @@
+
+<section>
+  <div class="view-airport__wrapper">
+    <input type="text" name="" class="table-filter">
+    <table>
+      <thead>
+        <tr>
+          <th>Airport Code</th>
+          <th>Airport State</th>
+          <th>Airport Name</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of airportData">
+          <td>{{data.airportCode}}</td>
+          <td>{{data.airportState}}</td>
+          <td>{{data.airportName}}</td>
+          <td><mat-icon class="white-icon">create</mat-icon> <mat-icon class="red-icon">delete</mat-icon></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

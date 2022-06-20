@@ -1,0 +1,34 @@
+
+<section>
+  <div class="view-flight__wrapper">
+    <input type="text" name="" class="table-filter">
+    <table>
+      <thead>
+        <tr>
+          <th>Flight Number</th>
+          <th>Airline</th>
+          <th>From</th>
+          <th>To</th>
+          <th>Dept. Date</th>
+          <th>Available Seats</th>
+          <th>Fare</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of flightData">
+          <td>{{data.flightNumber}}</td>
+          <td>{{data.airline}}</td>
+          <td>{{data.srcAirport}}</td>
+          <td>{{data.dstnAirport}}</td>
+          <td>{{data.deptDateTime}}</td>
+          <td>{{data.availableSeats}}</td>
+          <td>{{data.ticketCost}}</td>
+          <td>{{data.enabled}}</td>
+          <td><mat-icon class="white-icon">create</mat-icon> <mat-icon class="red-icon">delete</mat-icon></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
