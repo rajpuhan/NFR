@@ -1,9 +1,10 @@
 <section class="add-airport__container">
     <div class="add-airport__wrapper">
         <h2>Add Airport</h2>
-        <input type="text" placeholder="Enter Airport Code" class="add-airport-input">
-        <input type="text" placeholder="Enter Airport State" class="add-airport-input">
-        <input type="text" placeholder="Enter Airport Name" class="add-airport-input">
+        <input type="text" placeholder="Enter Airport Code" class="add-airport-input" [(ngModel)]="airPortDetails.airportCode">
+        <input type="text" placeholder="Enter Airport State" class="add-airport-input" [(ngModel)]="airPortDetails.airportState">
+        <input type="text" placeholder="Enter Airport Name" class="add-airport-input" [(ngModel)]="airPortDetails.airportName">
         <button class="add-btn" (click)="onAdd()">Add</button>
     </div>
+    <app-success-modal [openModal]="openSuccessModal" [message]="successMsg"></app-success-modal>
 </section>

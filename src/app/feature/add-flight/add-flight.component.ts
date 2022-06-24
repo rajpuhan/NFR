@@ -45,6 +45,15 @@ export class AddFlightComponent implements OnInit {
     };
     this.addFlightService.addFlight({source: this.flightData.source, dest: this.flightData.dstn, formData: formData}).subscribe((data: any)=>{
       
+      this.flightData = {
+        flightNumber: '',
+    airPortName: '',
+    source: '',
+    dstn: '',
+    deptDate: '',
+    seats: '',
+    cost: ''
+      }
       console.log(data);
       this.successMsg=data.message;
       this.openSuccessModal=true;

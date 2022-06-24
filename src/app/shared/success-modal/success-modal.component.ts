@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-success-modal',
@@ -8,11 +8,17 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SuccessModalComponent implements OnInit {
   @Input() openModal!: boolean;
   @Input() message!: string;
+
+  doOpenModal!: boolean
   constructor() { }
 
   ngOnInit(): void {
+    this.doOpenModal = this.openModal;
+  }
+  ngOnChanges(changes: SimpleChanges) {
+    this.doOpenModal = changes.openModal.currentValue;
   }
   closeModal(){
-    this.openModal = false;
+    this.doOpenModal = false;
   }
 }
