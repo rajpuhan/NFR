@@ -13,6 +13,7 @@ import { ViewAirportComponent } from './view-airport/view-airport.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule} from '@angular/material/icon';
+import { SharedModule } from '../shared/shared.module';
 
 const materialModules = [
   MatIconModule
@@ -35,6 +36,7 @@ const materialModules = [
     RouterModule,
     HttpClientModule,
     FormsModule,
+    SharedModule,
     ...materialModules
   ]
 })

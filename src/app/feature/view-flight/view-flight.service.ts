@@ -9,7 +9,8 @@ export class ViewFlightService {
 
   constructor(private httpClientService: HttpClient) { }
   getFlightDetails(){
-      const config = { headers: new HttpHeaders().set('Content-Type', 'application/json') };
-      return this.httpClientService.get<any>('assets/json/viewflight.json', config);
+      // const config = { headers: new HttpHeaders().set('Content-Type', 'application/json')
+                    // };
+      return this.httpClientService.get<any>('/viewflight');
   }
 }

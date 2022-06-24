@@ -3,39 +3,39 @@
     <div class="add-flight__wrapper">
         <div class="add-flight-input__wrapper">
           <label for="">Flight Number</label>
-          <input type="text" placeholder="Enter Flight Number" class="add-flight-input">
+          <input type="text" class="add-flight-input" [(ngModel)]="flightData.flightNumber">
         </div>
 
         <div class="add-flight-input__wrapper">
           <label for="">Airline Name</label>
-          <input type="text" placeholder="Enter Airline Name" class="add-flight-input">
+          <input type="text" class="add-flight-input" [(ngModel)]="flightData.airPortName">
         </div>
 
         <div class="add-flight-input__wrapper">
           <label for="">From</label>
-          <input type="text" placeholder="From" class="add-flight-input">
+          <input type="text" class="add-flight-input" [(ngModel)]="flightData.source">
         </div>
 
         <div class="add-flight-input__wrapper">
           <label for="">To</label>
-          <input type="text" placeholder="To" class="add-flight-input">
+          <input type="text" class="add-flight-input" [(ngModel)]="flightData.dstn">
         </div>
 
         <div class="add-flight-input__wrapper">
           <label for="">Depart Date</label>
-          <input type="date" placeholder="Enter Depart Date" class="add-flight-input">
+          <input type="date" class="add-flight-input" [(ngModel)]="flightData.deptDate">
         </div>
 
         <div class="add-flight-input__wrapper">
           <label for="">Total Seats</label>
-          <input type="number" placeholder="Enter Total Seats" class="add-flight-input">
+          <input type="number" class="add-flight-input" min="0" [(ngModel)]="flightData.seats">
         </div>
 
         <div class="add-flight-input__wrapper">
           <label for="">Ticket Cost</label>
-          <input type="number" placeholder="Enter Ticket Cost" class="add-flight-input">
+          <input type="number" class="add-flight-input" min="0" [(ngModel)]="flightData.cost">
         </div>
     </div>
     <button class="add-btn" (click)="onAdd()">Add</button>
-    
+    <app-success-modal [openModal]="openSuccessModal" [message]="successMsg"></app-success-modal>
 </section>

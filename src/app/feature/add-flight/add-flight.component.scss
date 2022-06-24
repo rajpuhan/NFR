@@ -3,7 +3,7 @@
     &__container{
       display: flex;
       flex-direction: column;
-      width: 40%;
+      width: 50%;
       margin: auto;
       background: transparent;
     }
@@ -16,6 +16,10 @@
     }
     &-input{
       padding: 10px;
+      font-size: 1.125rem;
+      border: none;
+      border-bottom: 2px solid #6400b6;
+
       &__wrapper{
         width: 47%;
         display: flex;
@@ -33,5 +37,7 @@
     border-radius: 10px;
     border: none;
     color: #fff;
+    font-size: 1.125rem;
+    margin-top: 20px;
   }
 }

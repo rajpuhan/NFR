@@ -24,6 +24,7 @@ export class LoginComponent implements OnInit {
       localStorage.setItem('userid',data.id);
       localStorage.setItem('phone',data.phone);
       localStorage.setItem('status',data.enabled?'Active':'Inactive');
+      localStorage.setItem('auth-token',data.tokenType+' '+data.accessToken);
     });
     this.router.navigate(['/dashboard']);
   }

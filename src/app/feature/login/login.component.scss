@@ -1,7 +1,13 @@
 .login {
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+    }
     &__wrapper {
         background-color: #fff;
-        padding: 20px 40px;
+        padding: 40px;
         border-radius: 20px;
         width: 30%;
         margin: auto;
@@ -9,19 +15,22 @@
         flex-direction: column;
     }
     &-input {
-        margin-bottom: 20px;
+        margin: 20px 0;
         padding: 10px;
         border: none;
         border-bottom: 2px solid #6400b6;
+        font-size: 1.125rem;
         &:focus {
             outline: none;
         }
     }
     &-btn {
         background: linear-gradient(45deg, #0059ff, #4600b6, #6400b6);
-        padding: 10px;
+        padding: 15px;
         border-radius: 10px;
         border: none;
         color: #fff;
+        font-size: 1.125rem;
+        margin-top: 20px;
     }
 }

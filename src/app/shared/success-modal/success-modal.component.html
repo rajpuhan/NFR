@@ -1,0 +1,9 @@
+<section class="modal-wrapper" *ngIf="openModal">
+    <div class="modal-icon">
+        <mat-icon class="green-icon">done</mat-icon>
+    </div>
+    <p class="modal-message">Thank You..</p>
+    <p class="modal-message">{{message}}</p>
+    <button (click)="closeModal()" class="modal-btn">OK</button>
+</section>
+<div class="modal-overlay" *ngIf="openModal"></div>
