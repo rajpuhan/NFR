@@ -6,7 +6,7 @@ exports.viewFlight = function(req, res) {
 exports.add = function(req, res) {
         let flightDetails = {
                 code: 200,
-                message: "FLight Added Successfully"
+                message: "Flight Added Successfully"
         }
         res.json(flightDetails);
 };
